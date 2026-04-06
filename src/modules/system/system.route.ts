@@ -1,7 +1,5 @@
-import { type TypeBoxTypeProvider } from "@fastify/type-provider-typebox";
+import type { TypeBoxTypeProvider } from "@fastify/type-provider-typebox";
 import type { FastifyPluginAsync } from "fastify";
-
-import { createTodo, echoName, getTodoById } from "./system.service.js";
 import {
   CreateTodoBodySchema,
   CreateTodoResponseSchema,
@@ -13,6 +11,7 @@ import {
   GetTodoResponseSchema,
   TodoNotFoundResponseSchema,
 } from "./system.schema.js";
+import { createTodo, echoName, getTodoById } from "./system.service.js";
 
 const systemRoutes: FastifyPluginAsync = async (app) => {
   const typedApp = app.withTypeProvider<TypeBoxTypeProvider>();

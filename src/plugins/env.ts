@@ -1,6 +1,6 @@
 import fastifyEnv from "@fastify/env";
-import fp from "fastify-plugin";
 import type { FastifyPluginAsync } from "fastify";
+import fp from "fastify-plugin";
 
 import { envSchema } from "../config/env.js";
 

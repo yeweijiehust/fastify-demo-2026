@@ -1,6 +1,9 @@
 import { Type } from "@sinclair/typebox";
 
-import { createSuccessResponseSchema, errorEnvelopeSchema } from "../../schemas/response.js";
+import {
+  createSuccessResponseSchema,
+  errorEnvelopeSchema,
+} from "../../schemas/response.js";
 
 export const TodoPrioritySchema = Type.Union([
   Type.Literal("low"),

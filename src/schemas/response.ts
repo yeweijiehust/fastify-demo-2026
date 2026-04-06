@@ -22,7 +22,9 @@ export const errorEnvelopeSchema = {
   required: ["success", "error"],
 } as const;
 
-export function createSuccessResponseSchema(dataSchema: Record<string, unknown>) {
+export function createSuccessResponseSchema(
+  dataSchema: Record<string, unknown>,
+) {
   return {
     ...successEnvelopeSchema,
     properties: {

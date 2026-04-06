@@ -1,6 +1,13 @@
 export const envSchema = {
   type: "object",
-  required: ["NODE_ENV", "HOST", "PORT", "LOG_LEVEL", "APP_NAME", "APP_VERSION"],
+  required: [
+    "NODE_ENV",
+    "HOST",
+    "PORT",
+    "LOG_LEVEL",
+    "APP_NAME",
+    "APP_VERSION",
+  ],
   properties: {
     NODE_ENV: {
       type: "string",

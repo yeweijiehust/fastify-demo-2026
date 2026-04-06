@@ -26,7 +26,9 @@ export function echoName(input: {
   repeat: number;
 } {
   const repeat = input.repeat ?? 1;
-  const normalizedName = input.uppercase ? input.name.toUpperCase() : input.name;
+  const normalizedName = input.uppercase
+    ? input.name.toUpperCase()
+    : input.name;
 
   return {
     message: Array.from({ length: repeat }, () => normalizedName).join(" "),
